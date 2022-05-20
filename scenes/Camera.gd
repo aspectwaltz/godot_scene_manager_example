@@ -45,16 +45,23 @@ var Sens = {
 }
 
 func _ready():
-	camera_initialize()
+	pass
 
 func _process(delta):
-	camera_update()
+	camera_update();
 
 func camera_initialize():
 	pass
 
 func camera_update():
-	pass
+	if Input.is_action_pressed("CAMERA_LEFT"):
+		rotation.y -= 0.01
+	if Input.is_action_pressed("CAMERA_RIGHT"):
+		rotation.y += 0.01
+	if Input.is_action_pressed("CAMERA_UP"):
+		rotation.x -= 0.01
+	if Input.is_action_pressed("CAMERA_DOWN"):
+		rotation.x += 0.01
 	
 func shake_random():
 	pass
