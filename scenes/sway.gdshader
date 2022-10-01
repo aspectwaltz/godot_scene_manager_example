@@ -1,7 +1,13 @@
 shader_type spatial;
-render_mode unshaded;
+render_mode depth_draw_alpha_prepass;
 
 uniform sampler2D stack_sheet : hint_albedo;
+
+void vertex(){
+	VERTEX.x = VERTEX.x + (1.0-COLOR.b*COLOR.g)*0.1*sin(TIME + COLOR.b*COLOR.g);
+	VERTEX.z = VERTEX.z + (1.0-COLOR.b*COLOR.g)*0.1*cos(TIME + COLOR.b*COLOR.g);
+}
+
 
 void fragment() {
 	float layer_height = COLOR.g;

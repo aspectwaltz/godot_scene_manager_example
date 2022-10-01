@@ -1,0 +1,385 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://fonts/menu.tres" type="DynamicFont" id=1]
+
+[node name="Control" type="Control"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -942.0
+margin_bottom = -563.0
+size_flags_horizontal = 2
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer"]
+margin_right = 684.0
+margin_bottom = 256.0
+columns = 3
+
+[node name="camera panel" type="PanelContainer" parent="MarginContainer/GridContainer"]
+margin_right = 340.0
+margin_bottom = 256.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/GridContainer/camera panel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 333.0
+margin_bottom = 249.0
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/camera panel/VBoxContainer"]
+margin_right = 326.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "camera COntrols"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/GridContainer/camera panel/VBoxContainer"]
+margin_top = 41.0
+margin_right = 241.0
+margin_bottom = 78.0
+size_flags_horizontal = 2
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/camera panel/VBoxContainer/HBoxContainer"]
+margin_right = 77.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "pitch"
+align = 2
+valign = 1
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/GridContainer/camera panel/VBoxContainer/HBoxContainer"]
+margin_left = 81.0
+margin_top = 10.0
+margin_right = 241.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 160, 0 )
+size_flags_horizontal = 2
+size_flags_vertical = 4
+min_value = 30.0
+max_value = 90.0
+step = 10.0
+value = 30.0
+tick_count = 12
+ticks_on_borders = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/GridContainer/camera panel/VBoxContainer"]
+margin_top = 82.0
+margin_right = 297.0
+margin_bottom = 119.0
+size_flags_horizontal = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/camera panel/VBoxContainer/HBoxContainer2"]
+margin_right = 133.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "rotation"
+valign = 1
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/GridContainer/camera panel/VBoxContainer/HBoxContainer2"]
+margin_left = 137.0
+margin_top = 10.0
+margin_right = 297.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 160, 0 )
+size_flags_horizontal = 2
+size_flags_vertical = 4
+min_value = 30.0
+max_value = 90.0
+step = 10.0
+value = 30.0
+tick_count = 12
+ticks_on_borders = true
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/GridContainer/camera panel/VBoxContainer"]
+margin_top = 123.0
+margin_right = 237.0
+margin_bottom = 160.0
+size_flags_horizontal = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/camera panel/VBoxContainer/HBoxContainer3"]
+margin_right = 73.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "zoom"
+valign = 1
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/GridContainer/camera panel/VBoxContainer/HBoxContainer3"]
+margin_left = 77.0
+margin_top = 10.0
+margin_right = 237.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 160, 0 )
+size_flags_horizontal = 2
+size_flags_vertical = 4
+min_value = 30.0
+max_value = 90.0
+step = 10.0
+value = 30.0
+tick_count = 12
+ticks_on_borders = true
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer/GridContainer/camera panel/VBoxContainer"]
+margin_top = 164.0
+margin_right = 245.0
+margin_bottom = 201.0
+size_flags_horizontal = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/camera panel/VBoxContainer/HBoxContainer4"]
+margin_right = 81.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "speed"
+valign = 1
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/GridContainer/camera panel/VBoxContainer/HBoxContainer4"]
+margin_left = 85.0
+margin_top = 10.0
+margin_right = 245.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 160, 0 )
+size_flags_horizontal = 2
+size_flags_vertical = 4
+min_value = 30.0
+max_value = 90.0
+step = 10.0
+value = 30.0
+tick_count = 12
+ticks_on_borders = true
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="MarginContainer/GridContainer/camera panel/VBoxContainer"]
+margin_top = 205.0
+margin_right = 326.0
+margin_bottom = 242.0
+size_flags_horizontal = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/camera panel/VBoxContainer/HBoxContainer5"]
+margin_right = 162.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "zoom speed"
+valign = 1
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/GridContainer/camera panel/VBoxContainer/HBoxContainer5"]
+margin_left = 166.0
+margin_top = 10.0
+margin_right = 326.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 160, 0 )
+size_flags_horizontal = 2
+size_flags_vertical = 4
+min_value = 30.0
+max_value = 90.0
+step = 10.0
+value = 30.0
+tick_count = 12
+ticks_on_borders = true
+
+[node name="movement panel" type="PanelContainer" parent="MarginContainer/GridContainer"]
+margin_left = 344.0
+margin_right = 684.0
+margin_bottom = 256.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/GridContainer/movement panel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 333.0
+margin_bottom = 249.0
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/movement panel/VBoxContainer"]
+margin_right = 326.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "boat controls"
+align = 1
+valign = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/GridContainer/movement panel/VBoxContainer"]
+margin_top = 41.0
+margin_right = 241.0
+margin_bottom = 78.0
+size_flags_horizontal = 2
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/movement panel/VBoxContainer/HBoxContainer"]
+margin_right = 77.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "pitch"
+align = 2
+valign = 1
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/GridContainer/movement panel/VBoxContainer/HBoxContainer"]
+margin_left = 81.0
+margin_top = 10.0
+margin_right = 241.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 160, 0 )
+size_flags_horizontal = 2
+size_flags_vertical = 4
+min_value = 30.0
+max_value = 90.0
+step = 10.0
+value = 30.0
+tick_count = 12
+ticks_on_borders = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/GridContainer/movement panel/VBoxContainer"]
+margin_top = 82.0
+margin_right = 297.0
+margin_bottom = 119.0
+size_flags_horizontal = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/movement panel/VBoxContainer/HBoxContainer2"]
+margin_right = 133.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "rotation"
+valign = 1
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/GridContainer/movement panel/VBoxContainer/HBoxContainer2"]
+margin_left = 137.0
+margin_top = 10.0
+margin_right = 297.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 160, 0 )
+size_flags_horizontal = 2
+size_flags_vertical = 4
+min_value = 30.0
+max_value = 90.0
+step = 10.0
+value = 30.0
+tick_count = 12
+ticks_on_borders = true
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/GridContainer/movement panel/VBoxContainer"]
+margin_top = 123.0
+margin_right = 237.0
+margin_bottom = 160.0
+size_flags_horizontal = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/movement panel/VBoxContainer/HBoxContainer3"]
+margin_right = 73.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "zoom"
+valign = 1
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/GridContainer/movement panel/VBoxContainer/HBoxContainer3"]
+margin_left = 77.0
+margin_top = 10.0
+margin_right = 237.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 160, 0 )
+size_flags_horizontal = 2
+size_flags_vertical = 4
+min_value = 30.0
+max_value = 90.0
+step = 10.0
+value = 30.0
+tick_count = 12
+ticks_on_borders = true
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer/GridContainer/movement panel/VBoxContainer"]
+margin_top = 164.0
+margin_right = 245.0
+margin_bottom = 201.0
+size_flags_horizontal = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/movement panel/VBoxContainer/HBoxContainer4"]
+margin_right = 81.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "speed"
+valign = 1
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/GridContainer/movement panel/VBoxContainer/HBoxContainer4"]
+margin_left = 85.0
+margin_top = 10.0
+margin_right = 245.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 160, 0 )
+size_flags_horizontal = 2
+size_flags_vertical = 4
+min_value = 30.0
+max_value = 90.0
+step = 10.0
+value = 30.0
+tick_count = 12
+ticks_on_borders = true
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="MarginContainer/GridContainer/movement panel/VBoxContainer"]
+margin_top = 205.0
+margin_right = 326.0
+margin_bottom = 242.0
+size_flags_horizontal = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="MarginContainer/GridContainer/movement panel/VBoxContainer/HBoxContainer5"]
+margin_right = 162.0
+margin_bottom = 37.0
+custom_colors/font_color = Color( 0.984314, 0.733333, 0.678431, 1 )
+custom_colors/font_outline_modulate = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_colors/font_color_shadow = Color( 0.160784, 0.156863, 0.192157, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "zoom speed"
+valign = 1
+
+[node name="HSlider" type="HSlider" parent="MarginContainer/GridContainer/movement panel/VBoxContainer/HBoxContainer5"]
+margin_left = 166.0
+margin_top = 10.0
+margin_right = 326.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 160, 0 )
+size_flags_horizontal = 2
+size_flags_vertical = 4
+min_value = 30.0
+max_value = 90.0
+step = 10.0
+value = 30.0
+tick_count = 12
+ticks_on_borders = true
